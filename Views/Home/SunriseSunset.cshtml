@@ -1,0 +1,25 @@
+﻿@model SunlightApp.Models.Results
+
+@{
+    ViewData["Title"] = "Sunrise Sunset";
+}
+
+    <div>
+        <h4>Sunrise Sunset Information</h4>
+        <hr />
+        <p style="color:red">NOTE: All times are in UTC and summer time adjustments are not included in the returned data.</p>
+        <dl class="row">
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Sunrise)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Sunrise)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Sunset)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Sunset)
+            </dd>
+        </dl>
+    </div>

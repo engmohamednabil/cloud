@@ -1,0 +1,12 @@
+﻿@model SunlightApp.Models.sunlightDataModel
+
+
+@{
+    ViewData["Title"] = "Sunlight Inc";
+}
+
+<div class="text-center">
+    <h1 class="display-4">@Html.DisplayFor(model => model.Title)</h1>
+    <p>
+    <img id="imgListing" src="@Html.DisplayFor(model => model.Img)" />
+</div>
